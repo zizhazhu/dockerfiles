@@ -1,0 +1,5 @@
+{
+	"server_port": 51556,
+	"timeout": 300,
+	"method":"rc4-md5"
+}
