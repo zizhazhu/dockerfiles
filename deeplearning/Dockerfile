@@ -19,6 +19,7 @@ RUN curl -fsSL -v -o ~/miniconda.sh -O  https://mirrors.tuna.tsinghua.edu.cn/ana
 RUN /opt/conda/bin/conda install jupyterlab
 RUN /opt/conda/bin/conda install pytorch torchvision torchaudio cpuonly -c pytorch
 RUN /opt/conda/bin/conda install tqdm matplotlib plotly
+RUN /opt/conda/bin/conda install -c conda-forge pysnooper
 RUN /opt/conda/bin/conda clean -ya
 RUN /opt/conda/bin/pip install torchelastic gdown
 
