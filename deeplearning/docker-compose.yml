@@ -1,0 +1,14 @@
+version: "3"
+services:
+    deeplearning:
+        build: .
+        image: zizhazhu/deeplearning:cpu
+        command: jupyter lab --ip 0.0.0.0
+        working_dir: /home/jupyter
+        user: "500:500"
+        volumes:
+            - "./jupyter:/home/jupyter"
+        environment:
+            HOME: /home/jupyter
+        ports:
+            - 38888:8888
